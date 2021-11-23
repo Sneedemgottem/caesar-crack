@@ -2,11 +2,11 @@ Caesar crack is a python script used to create Caesar cipher texts and also deco
 
 Usage:
 	The command only has two flags (-c and -m).
-	**-m** <String> This is a required field because it is the main string input you are giving the program.
+	-m <String> This is a required field because it is the main string input you are giving the program.
 
-	**-c** <Integer> This is an optional field. If you do not use it then it will simply output every single alphabet shift sequence of the string given with the -m flag. If you do choose to use this flag, it takes an integer as an input and will only output the original message with an alphabet shift of whatever integer you input. Can be used to create cipher text from an original message.
+	-c <Integer> This is an optional field. If you do not use it then it will simply output every single alphabet shift sequence of the string given with the -m flag. If you do choose to use this flag, it takes an integer as an input and will only output the original message with an alphabet shift of whatever integer you input. Can be used to create cipher text from an original message.
 
-	**-h** This outputs a help message to remind you of the flags.
+	-h This outputs a help message to remind you of the flags.
 
 Example:
 ```
