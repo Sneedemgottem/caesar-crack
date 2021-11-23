@@ -60,14 +60,15 @@ def find_all_shifts(msg, shift = 1) -> None:
 # This is the main function
 def main():
     parser = ArgumentParser(description="Process inputed strings for caesar cipher text.")
-    parser.add_argument("-m", type=str, required=True, help="Input message")
+    parser.add_argument("-m", type=str, nargs='+', required=True, help="Input message")
     parser.add_argument("-c", type=int, required=False,help="If given, shift the message to the right by this amount (negative numbers are accepted for left shift).")
 
     args = parser.parse_args()
+    message = " ".join(args.m)
     if args.c == None:
-        find_all_shifts(args.m)
+        find_all_shifts(message)
     else:
-        print(shift_word(args.m, args.c))
+        print(shift_word(message, args.c))
 
 if __name__ == "__main__":
 	main()
